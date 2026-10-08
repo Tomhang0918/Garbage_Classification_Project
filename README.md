@@ -83,7 +83,7 @@ python src/train_MobileNetV3.py
 
 *训练完成后，最佳模型权重将保存至`model/best_mobilenet_finetune.pth`，Loss/Acc曲线保存至 `outputs/`。*
 
-## 3. 复现报告中的“边缘部署效率指标”（表2）
+## 3. 复现报告中的“边缘部署效率指标”
 
 为了验证模型在低资源设备上的部署优势，我们提供了专门的评估脚本，用于计算 **FLOPs、模型体积与CPU推理延迟**。
 
@@ -91,7 +91,7 @@ python src/train_MobileNetV3.py
 python src/test_efficiency.py
 ```
 
-*运行完成后，终端将输出与报告“表2”一致的参数量、FLOPs和CPU推理时间（ms）对比数据。*
+*运行完成后，终端将输出与报告一致的参数量、FLOPs和CPU推理时间（ms）对比数据。*
 
 ### 4. 生成混淆矩阵（细粒度误差分析）
 
